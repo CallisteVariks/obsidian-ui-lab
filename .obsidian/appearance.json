@@ -1,1 +1,6 @@
-{}
+{
+  "enabledCssSnippets": [
+    "color-swatch-cards",
+    "custom-colors"
+  ]
+}

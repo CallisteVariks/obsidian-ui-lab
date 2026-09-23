@@ -1,0 +1,51 @@
+/* ========================================
+   Obsidian UI Lab
+   Component: Color Swatch Cards
+   ======================================== */
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.swatch-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.swatch-color {
+  height: 100px;
+}
+
+.swatch-light {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.swatch-content {
+  background: var(--background-secondary);
+  padding: 12px;
+  color: var(--text-normal);
+}
+
+.swatch-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.swatch-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 8px;
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.swatch-label {
+  opacity: 0.65;
+  font-weight: 600;
+}

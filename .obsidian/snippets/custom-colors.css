@@ -1,0 +1,107 @@
+/* ========================================
+   Obsidian UI Lab
+   Shared Color System
+   ======================================== */
+
+:root {
+  /* Accent colors */
+  --ui-red: #e63946;
+  --ui-orange: #f4a261;
+  --ui-yellow: #e9c46a;
+  --ui-green: #2a9d8f;
+  --ui-blue: #457b9d;
+  --ui-purple: #6d597a;
+  --ui-pink: #d98ab7;
+
+  /* Neutral colors */
+  --ui-charcoal: #222222;
+  --ui-gray: #6c757d;
+  --ui-light-gray: #e9ecef;
+  --ui-white: #ffffff;
+
+  /* Soft backgrounds */
+  --ui-soft-red: #f8d7da;
+  --ui-soft-orange: #fde2cf;
+  --ui-soft-yellow: #fff3bf;
+  --ui-soft-green: #bee3db;
+  --ui-soft-blue: #cfe8f7;
+  --ui-soft-purple: #e9d8fd;
+  --ui-soft-pink: #f7d6e6;
+}
+
+
+/* ========================================
+   Text Colors
+   ======================================== */
+
+.text-red {
+  color: var(--ui-red);
+}
+
+.text-orange {
+  color: var(--ui-orange);
+}
+
+.text-yellow {
+  color: var(--ui-yellow);
+}
+
+.text-green {
+  color: var(--ui-green);
+}
+
+.text-blue {
+  color: var(--ui-blue);
+}
+
+.text-purple {
+  color: var(--ui-purple);
+}
+
+.text-pink {
+  color: var(--ui-pink);
+}
+
+.text-gray {
+  color: var(--ui-gray);
+}
+
+
+/* ========================================
+   Highlights
+   ======================================== */
+
+.mark-red {
+  background: var(--ui-soft-red);
+  color: #5a1e24;
+}
+
+.mark-orange {
+  background: var(--ui-soft-orange);
+  color: #6e3a14;
+}
+
+.mark-yellow {
+  background: var(--ui-soft-yellow);
+  color: #5c4a00;
+}
+
+.mark-green {
+  background: var(--ui-soft-green);
+  color: #1f3a36;
+}
+
+.mark-blue {
+  background: var(--ui-soft-blue);
+  color: #1f3d52;
+}
+
+.mark-purple {
+  background: var(--ui-soft-purple);
+  color: #3e2a5e;
+}
+
+.mark-pink {
+  background: var(--ui-soft-pink);
+  color: #5a2940;
+}
