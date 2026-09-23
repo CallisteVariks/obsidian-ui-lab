@@ -146,6 +146,72 @@ You can use the shared Obsidian UI Lab palette inside the table, but the compone
 
 ---
 
+### `chat-core.css`
+
+Provides the base styling for chat-style interfaces.
+
+This is the foundation for the current [[Basic Chat Bubbles]] component and future chat extensions.
+
+**Purpose**
+
+- Creates left and right message bubbles
+- Adds message tails
+- Styles timestamps and read receipts
+- Provides date separators
+- Handles responsive bubble widths
+- Prevents unwanted Obsidian scrollbars
+- Provides the foundation for future chat components
+
+**Used by**
+
+- [[Basic Chat Bubbles]]
+
+Future components may include:
+
+- Reply Messages
+- Image Messages
+- Image Gallery
+- Message Reactions
+
+**Depends on**
+
+- No required shared snippets
+
+**Optional**
+
+- `custom-colors.css`
+
+If `custom-colors.css` is enabled, the right message bubble uses:
+
+```css
+var(--ui-purple)
+```
+
+Otherwise, `chat-core.css` uses its built-in fallback color.
+
+**Main classes and callouts**
+
+```text
+chat-left
+chat-right
+.chat-time
+.chat-date
+```
+
+The message bubbles use native Obsidian callouts:
+
+```md
+> [!chat-left]
+```
+
+and:
+
+```md
+> [!chat-right]
+```
+
+---
+
 ## Current Snippet Structure
 
 ```text
@@ -153,7 +219,8 @@ You can use the shared Obsidian UI Lab palette inside the table, but the compone
 └── snippets/
     ├── custom-colors.css
     ├── color-swatch-cards.css
-    └── reference-table.css
+    ├── reference-table.css
+    └── chat-core.css
 ```
 
 More snippets will be added as new components are introduced.
@@ -227,8 +294,11 @@ Component-specific snippets use descriptive lowercase filenames separated with h
 ```
 color-swatch-cards.css
 reference-table.css
-chat-bubbles.css
-image-gallery.css
+chat-core.css
+chat-replies.css
+chat-images.css
+chat-gallery.css
+chat-reactions.css
 profile-card.css
 ```
 
@@ -248,5 +318,6 @@ This keeps the snippets folder easy to browse as the project grows.
 - [[Custom Colors]]
 - [[Color Swatch Cards]]
 - [[Color Reference Table]]
+- [[Basic Chat Bubbles]]
 
 ---

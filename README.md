@@ -64,6 +64,38 @@ The underlying table styles are intentionally generic, so the component can also
 
 `custom-colors.css` can optionally be used with this component, but is not required.
 
+
+
+### 💬 Basic Chat Bubbles
+
+Create simple chat-style conversations using native Obsidian callouts.
+
+**Features**
+
+- Left and right message bubbles
+- Message tails
+- Timestamps
+- Read receipts
+- Date separators
+- Responsive message width
+- Scrollbar fixes for Obsidian callouts
+- No third-party plugins required
+
+**Files**
+
+```text
+02 - Chat UI/
+└── Basic Chat Bubbles.md
+
+.obsidian/
+└── snippets/
+    └── chat-core.css
+```
+
+`custom-colors.css` can optionally provide the shared Obsidian UI Lab accent color.
+
+The chat system will be expanded gradually with replies, images, galleries, and reactions.
+
 ---
 
 ## Shared Theme
@@ -119,11 +151,15 @@ obsidian-ui-lab/
 │   ├── Color Swatch Cards.md
 │   └── Color Reference Table.md
 │
+├── 02 - Chat UI/
+│   └── Basic Chat Bubbles.md
+│
 └── .obsidian/
     └── snippets/
         ├── custom-colors.css
         ├── color-swatch-cards.css
-        └── reference-table.css
+        ├── reference-table.css
+        └── chat-core.css
 ```
 
 The project is intentionally starting small and will grow component by component.
@@ -132,18 +168,24 @@ The project is intentionally starting small and will grow component by component
 
 ## Planned Components
 
-Future additions may include:
+### Chat UI
 
-- Chat bubbles and message layouts
-- Replies and reactions
+- Reply messages
+- Image messages
 - Image galleries
+- Message reactions
+- Complete chat examples
+
+### Other UI
+
 - Cards
 - Journaling layouts
 - Trackers
 - Dashboards
 - Navigation elements
+- Image layouts
 - Creative writing UI
-- Fun interface-inspired components
+- Interface-inspired components
 
 ---
 

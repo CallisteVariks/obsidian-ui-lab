@@ -2,6 +2,7 @@
   "enabledCssSnippets": [
     "color-swatch-cards",
     "custom-colors",
-    "reference-table"
+    "reference-table",
+    "chat-core"
   ]
 }

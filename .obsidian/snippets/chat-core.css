@@ -1,0 +1,193 @@
+/* ========================================
+   Obsidian UI Lab
+   Component: Basic Chat Bubbles
+   ======================================== */
+
+
+/* ----------------------------------------
+   Shared bubble styles
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"],
+.callout[data-callout="chat-right"] {
+  position: relative;
+
+  width: fit-content !important;
+  max-width: 72% !important;
+
+  padding: 10px 14px 6px;
+
+  border: none;
+  border-radius: 18px;
+
+  font-size: 0.95rem;
+  line-height: 1.45;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 2px 5px rgba(0, 0, 0, 0.04);
+
+  overflow: visible;
+}
+
+
+/* ----------------------------------------
+   Remove default Obsidian callout styling
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"] .callout-title,
+.callout[data-callout="chat-right"] .callout-title {
+  display: none;
+}
+
+.callout[data-callout="chat-left"] .callout-content,
+.callout[data-callout="chat-right"] .callout-content {
+  padding: 0;
+}
+
+.callout[data-callout="chat-left"] p,
+.callout[data-callout="chat-right"] p {
+  margin: 0;
+}
+
+
+/* ----------------------------------------
+   Left message
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"] {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+
+  background: var(--background-secondary);
+  color: var(--text-normal);
+
+  border-bottom-left-radius: 5px;
+}
+
+
+/* Left bubble tail */
+
+.callout[data-callout="chat-left"]::after {
+  content: "";
+
+  position: absolute;
+  left: -5px;
+  bottom: 0;
+
+  width: 11px;
+  height: 11px;
+
+  background: var(--background-secondary);
+
+  clip-path: polygon(
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+
+/* ----------------------------------------
+   Right message
+   ---------------------------------------- */
+
+.callout[data-callout="chat-right"] {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+
+  background: var(--ui-purple, #6d597a);
+  color: #ffffff;
+
+  border-bottom-right-radius: 5px;
+}
+
+
+/* Right bubble tail */
+
+.callout[data-callout="chat-right"]::after {
+  content: "";
+
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+
+  width: 11px;
+  height: 11px;
+
+  background: var(--ui-purple, #6d597a);
+
+  clip-path: polygon(
+    0 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+
+/* ----------------------------------------
+   Timestamp
+   ---------------------------------------- */
+
+.chat-time {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 0.65rem;
+  line-height: 1;
+
+  text-align: right;
+
+  opacity: 0.55;
+}
+
+.callout[data-callout="chat-right"] .chat-time {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ----------------------------------------
+   Date separator
+   ---------------------------------------- */
+
+.chat-date {
+  width: fit-content;
+
+  margin: 14px auto 10px;
+  padding: 4px 12px;
+
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: var(--text-muted);
+  background: var(--background-secondary);
+
+  border-radius: 999px;
+}
+
+
+/* ----------------------------------------
+   Obsidian overflow / preent unwanted scrollbar 
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"],
+.callout[data-callout="chat-right"] {
+  overflow: visible !important;
+}
+
+.callout[data-callout="chat-left"] .callout-content,
+.callout[data-callout="chat-right"] .callout-content {
+  min-width: 0;
+  max-width: 100%;
+
+  overflow: visible !important;
+
+  scrollbar-width: none;
+}
+
+.callout[data-callout="chat-left"] .callout-content::-webkit-scrollbar,
+.callout[data-callout="chat-right"] .callout-content::-webkit-scrollbar {
+  display: none;
+}
