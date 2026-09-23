@@ -1,0 +1,11 @@
+# Obsidian workspace state
+.obsidian/workspace.json
+.obsidian/workspaces.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Trash
+.trash/
