@@ -1,6 +1,9 @@
-# Obsidian workspace state
-.obsidian/workspace.json
-.obsidian/workspaces.json
+# Ignore Obsidian configuration by default
+.obsidian/*
+
+# Keep public CSS snippets
+!.obsidian/snippets/
+!.obsidian/snippets/**
 
 # OS files
 .DS_Store

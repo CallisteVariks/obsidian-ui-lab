@@ -1,5 +1,8 @@
 # Obsidian UI Lab
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/CallisteVariks/obsidian-ui-lab?color=8b5cf6)](https://github.com/CallisteVariks/obsidian-ui-lab/releases)
+
 > Reusable Markdown layouts and CSS components for making Obsidian more visual.
 
 Obsidian UI Lab is a growing collection of small, copy-friendly UI components for Obsidian. Each component includes a working example, the required CSS, and simple customization guidance.
