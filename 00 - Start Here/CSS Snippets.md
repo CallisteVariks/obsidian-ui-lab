@@ -31,6 +31,7 @@ Shared color variables and utility classes used across Obsidian UI Lab.
 **Used by**
 
 - [[Color Swatch Cards]]
+- Optional for [[Color Reference Table]]
 
 **Example variables**
 
@@ -103,14 +104,56 @@ Styles the responsive color card component used in [[Color Swatch Cards]].
 ```
 
 ---
+### `reference-table.css`
+
+Styles a compact, reusable reference table.
+
+The component is currently demonstrated in [[Color Reference Table]], but the CSS is intentionally generic so it can also be adapted for structured reference data beyond colors.
+
+**Purpose**
+
+- Creates a compact row-based reference layout
+- Supports a visual indicator or swatch column
+- Provides flexible content columns
+- Adds row hover states
+- Keeps labels and values aligned
+- Can be reused for non-color data
+
+**Used by**
+
+- [[Color Reference Table]]
+
+**Depends on**
+
+- No required shared snippets
+
+**Optional**
+
+- `custom-colors.css`
+
+You can use the shared Obsidian UI Lab palette inside the table, but the component also works with ordinary CSS colors.
+
+**Main classes**
+
+```text
+.reference-table
+.reference-row
+.reference-header
+.reference-swatch
+.reference-title
+.reference-value
+```
+
+---
 
 ## Current Snippet Structure
 
-```
+```text
 .obsidian/
 └── snippets/
     ├── custom-colors.css
-    └── color-swatch-cards.css
+    ├── color-swatch-cards.css
+    └── reference-table.css
 ```
 
 More snippets will be added as new components are introduced.
@@ -183,6 +226,7 @@ Component-specific snippets use descriptive lowercase filenames separated with h
 
 ```
 color-swatch-cards.css
+reference-table.css
 chat-bubbles.css
 image-gallery.css
 profile-card.css
@@ -203,5 +247,6 @@ This keeps the snippets folder easy to browse as the project grows.
 - [[How to Install]]
 - [[Custom Colors]]
 - [[Color Swatch Cards]]
+- [[Color Reference Table]]
 
 ---
