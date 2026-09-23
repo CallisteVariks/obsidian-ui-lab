@@ -12,6 +12,9 @@ Obsidian UI Lab is a growing collection of small, copy-friendly UI components fo
 
 A responsive card grid for displaying color palettes and reference values inside Obsidian.
 
+![Color Swatch Cards](assets/screenshots/color-swatch-cards.png)
+
+
 **Features**
 
 - Responsive grid layout
@@ -41,6 +44,9 @@ A compact reference table for displaying color swatches and related values.
 
 The underlying table styles are intentionally generic, so the component can also be adapted for design tokens, project references, status lists, inventories, or other structured data.
 
+![Color Reference Table](assets/screenshots/color-reference-table.png)
+
+
 **Features**
 
 - Compact reference layout
@@ -69,6 +75,9 @@ The underlying table styles are intentionally generic, so the component can also
 ### 💬 Basic Chat Bubbles
 
 Create simple chat-style conversations using native Obsidian callouts.
+
+![Basic Chat Bubbles](assets/screenshots/basic-chat-bubbles.png)
+
 
 **Features**
 
@@ -141,6 +150,12 @@ obsidian-ui-lab/
 │
 ├── README.md
 ├── .gitignore
+│
+├── assets/
+│   └── screenshots/
+│       ├── color-swatch-cards.png
+│       ├── color-reference-table.png
+│       └── basic-chat-bubbles.png
 │
 ├── 00 - Start Here/
 │   ├── How to Install.md

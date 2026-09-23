@@ -306,36 +306,6 @@ Enable hidden files in your file explorer to display it.
 
 ---
 
-## Current Structure
-
-The project will grow over time, but the initial vault is intentionally small:
-
-```
-obsidian-ui-lab/
-│
-├── README.md
-├── .gitignore
-│
-├── 00 - Start Here/
-│   ├── How to Install.md
-│   ├── CSS Snippets.md
-│   └── Custom Colors.md
-│
-├── 01 - Color UI/
-│   ├── Color Swatch Cards.md
-│   └── Color Reference Table.md
-│
-├── 02 - Chat UI/
-│   └── Basic Chat Bubbles.md
-│
-└── .obsidian/
-    └── snippets/
-        ├── custom-colors.css
-        ├── color-swatch-cards.css
-        ├── reference-table.css
-        └── chat-core.css
-```
-
-New UI components and categories will be added gradually.
+Reference to [[README]] for Current Structure and regular updates. 
 
 ---
