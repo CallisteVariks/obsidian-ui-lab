@@ -1,6 +1,7 @@
 {
   "enabledCssSnippets": [
     "color-swatch-cards",
-    "custom-colors"
+    "custom-colors",
+    "reference-table"
   ]
 }

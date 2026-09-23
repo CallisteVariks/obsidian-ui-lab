@@ -1,0 +1,49 @@
+/* ========================================
+   Obsidian UI Lab
+   Component: Reference Table
+   ======================================== */
+
+.reference-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.reference-row {
+  display: grid;
+  grid-template-columns: 40px minmax(140px, 1.5fr) 110px 150px 150px;
+  align-items: center;
+  gap: 8px;
+
+  padding: 7px 10px;
+  border-radius: 6px;
+
+  background: var(--background-secondary);
+}
+
+.reference-row:hover {
+  background: var(--background-secondary-alt);
+}
+
+.reference-row.reference-header {
+  font-weight: 700;
+  color: var(--text-muted);
+  background: transparent;
+}
+
+.reference-swatch {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.reference-title {
+  font-weight: 700;
+}
+
+.reference-value {
+  font-size: 13px;
+}

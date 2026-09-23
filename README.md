@@ -33,6 +33,37 @@ A responsive card grid for displaying color palettes and reference values inside
     └── color-swatch-cards.css
 ```
 
+
+
+### 📋 Color Reference Table
+
+A compact reference table for displaying color swatches and related values.
+
+The underlying table styles are intentionally generic, so the component can also be adapted for design tokens, project references, status lists, inventories, or other structured data.
+
+**Features**
+
+- Compact reference layout
+- Visual swatch column
+- Flexible name column
+- Hover states
+- Customizable columns
+- Reusable beyond color palettes
+- No third-party plugins required
+
+**Files**
+
+```text
+01 - Color UI/
+└── Color Reference Table.md
+
+.obsidian/
+└── snippets/
+    └── reference-table.css
+```
+
+`custom-colors.css` can optionally be used with this component, but is not required.
+
 ---
 
 ## Shared Theme
@@ -73,7 +104,7 @@ Full setup instructions are available in:
 
 ## Project Structure
 
-```
+```text
 obsidian-ui-lab/
 │
 ├── README.md
@@ -81,15 +112,18 @@ obsidian-ui-lab/
 │
 ├── 00 - Start Here/
 │   ├── How to Install.md
+│   ├── CSS Snippets.md
 │   └── Custom Colors.md
 │
 ├── 01 - Color UI/
-│   └── Color Swatch Cards.md
+│   ├── Color Swatch Cards.md
+│   └── Color Reference Table.md
 │
 └── .obsidian/
     └── snippets/
         ├── custom-colors.css
-        └── color-swatch-cards.css
+        ├── color-swatch-cards.css
+        └── reference-table.css
 ```
 
 The project is intentionally starting small and will grow component by component.
