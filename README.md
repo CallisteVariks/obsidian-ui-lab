@@ -1,19 +1,22 @@
 # Obsidian UI Lab
 
-Reusable Markdown layouts and CSS components for making Obsidian more visual.
+> Reusable Markdown layouts and CSS components for making Obsidian more visual.
 
 Obsidian UI Lab is a growing collection of small, copy-friendly UI components for Obsidian. Each component includes a working example, the required CSS, and simple customization guidance.
 
+Use the whole vault as a playground, or copy only the components you want.
+
+**No giant theme. No unnecessary plugins. Just reusable pieces.**
+
 ---
 
-## Current Components
+## ✨ Components
 
 ### 🎨 Color Swatch Cards
 
 A responsive card grid for displaying color palettes and reference values inside Obsidian.
 
 ![Color Swatch Cards](assets/screenshots/color-swatch-cards.png)
-
 
 **Features**
 
@@ -24,60 +27,33 @@ A responsive card grid for displaying color palettes and reference values inside
 - Light and dark theme friendly
 - No third-party plugins required
 
-**Files**
+[View component →](01%20-%20Color%20UI/Color%20Swatch%20Cards.md)
 
-```
-01 - Color UI/
-└── Color Swatch Cards.md
-
-.obsidian/
-└── snippets/
-    ├── custom-colors.css
-    └── color-swatch-cards.css
-```
-
-
+---
 
 ### 📋 Color Reference Table
 
-A compact reference table for displaying color swatches and related values.
-
-The underlying table styles are intentionally generic, so the component can also be adapted for design tokens, project references, status lists, inventories, or other structured data.
+A compact visual reference table for displaying color swatches and structured data.
 
 ![Color Reference Table](assets/screenshots/color-reference-table.png)
 
+The underlying table component is intentionally generic and can also be adapted for:
 
-**Features**
+- Design tokens
+- Project references
+- Status lists
+- Inventories
+- Structured datasets
 
-- Compact reference layout
-- Visual swatch column
-- Flexible name column
-- Hover states
-- Customizable columns
-- Reusable beyond color palettes
-- No third-party plugins required
+[View component →](01%20-%20Color%20UI/Color%20Reference%20Table.md)
 
-**Files**
-
-```text
-01 - Color UI/
-└── Color Reference Table.md
-
-.obsidian/
-└── snippets/
-    └── reference-table.css
-```
-
-`custom-colors.css` can optionally be used with this component, but is not required.
-
-
+---
 
 ### 💬 Basic Chat Bubbles
 
-Create simple chat-style conversations using native Obsidian callouts.
+A simple chat-style conversation using native Obsidian callouts.
 
 ![Basic Chat Bubbles](assets/screenshots/basic-chat-bubbles.png)
-
 
 **Features**
 
@@ -90,60 +66,93 @@ Create simple chat-style conversations using native Obsidian callouts.
 - Scrollbar fixes for Obsidian callouts
 - No third-party plugins required
 
-**Files**
+[View component →](02%20-%20Chat%20UI/Basic%20Chat%20Bubbles.md)
 
-```text
-02 - Chat UI/
-└── Basic Chat Bubbles.md
-
-.obsidian/
-└── snippets/
-    └── chat-core.css
-```
-
-`custom-colors.css` can optionally provide the shared Obsidian UI Lab accent color.
-
-The chat system will be expanded gradually with replies, images, galleries, and reactions.
+The chat system will grow modularly with replies, images, galleries, and reactions.
 
 ---
 
-## Shared Theme
+## 🚀 Quick Start
 
-The project includes a reusable color system in:
+### Use the whole vault
 
+Clone the repository:
+
+```bash
+git clone https://github.com/CallisteVariks/obsidian-ui-lab.git
 ```
+
+Then open the cloned folder as a vault in Obsidian.
+
+### Use only one component
+
+Each component page tells you exactly which CSS snippet it needs.
+
+CSS snippets live in:
+
+```text
+.obsidian/snippets/
+```
+
+Copy the required snippet into the same folder in your own vault, then enable it under:
+
+**Settings → Appearance → CSS snippets**
+
+For complete instructions:
+
+[Read the installation guide →](00%20-%20Start%20Here/How%20to%20Install.md)
+
+---
+
+## 🎨 Shared Color System
+
+Obsidian UI Lab includes an optional shared color system:
+
+```text
 .obsidian/snippets/custom-colors.css
 ```
 
-It provides shared color variables and utility classes that can be reused across future components such as cards, chat interfaces, dashboards, trackers, and other UI elements.
+Components can reference reusable variables such as:
 
-Examples:
-
+```css
+var(--ui-purple)
+var(--ui-soft-purple)
+var(--ui-blue)
+var(--ui-green)
 ```
+
+For example:
+
+```css
 color: var(--ui-purple);
 background: var(--ui-soft-purple);
 ```
 
-You can use the provided palette or replace it with your own colors.
+The shared palette helps components feel consistent, but components are designed to remain customizable and independent wherever possible.
+
+[View custom colors →](00%20-%20Start%20Here/Custom%20Colors.md)
 
 ---
 
-## Installation
+## 🧩 CSS Snippets
 
-You can either:
+Current snippets:
 
-- Clone or download the entire vault
-- Copy individual components into an existing Obsidian vault
-
-Full setup instructions are available in:
-
+```text
+.obsidian/snippets/
+├── custom-colors.css
+├── color-swatch-cards.css
+├── reference-table.css
+└── chat-core.css
 ```
-00 - Start Here/How to Install.md
-```
+
+Dependencies and available classes are documented here:
+
+[CSS Snippets →](00%20-%20Start%20Here/CSS%20Snippets.md)
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 obsidian-ui-lab/
@@ -153,9 +162,6 @@ obsidian-ui-lab/
 │
 ├── assets/
 │   └── screenshots/
-│       ├── color-swatch-cards.png
-│       ├── color-reference-table.png
-│       └── basic-chat-bubbles.png
 │
 ├── 00 - Start Here/
 │   ├── How to Install.md
@@ -177,11 +183,24 @@ obsidian-ui-lab/
         └── chat-core.css
 ```
 
-The project is intentionally starting small and will grow component by component.
+---
+
+## 🛠️ Design Principles
+
+Components in Obsidian UI Lab aim to be:
+
+- **Easy to copy**
+- **Easy to understand**
+- **Easy to customize**
+- **Independent where possible**
+- **Consistent where useful**
+- **Plugin-free unless explicitly stated**
+
+Take one component, take several, or use the entire vault.
 
 ---
 
-## Planned Components
+## 🗺️ Coming Next
 
 ### Chat UI
 
@@ -191,33 +210,21 @@ The project is intentionally starting small and will grow component by component
 - Message reactions
 - Complete chat examples
 
-### Other UI
+### More UI
 
 - Cards
+- Image layouts
 - Journaling layouts
 - Trackers
 - Dashboards
-- Navigation elements
-- Image layouts
+- Navigation components
 - Creative writing UI
 - Interface-inspired components
 
 ---
 
-## Philosophy
+## 💜 About
 
-The goal is to keep each component:
-
-- Easy to understand
-- Easy to copy
-- Easy to customize
-- Independent where possible
-- Consistent with the rest of the vault
-
-No giant theme required.
-
-Use only the pieces you want.
-
----
+Obsidian UI Lab is an evolving personal collection of UI experiments turned into reusable components.
 
 More components coming soon.
