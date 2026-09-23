@@ -228,3 +228,11 @@ Take one component, take several, or use the entire vault.
 Obsidian UI Lab is an evolving personal collection of UI experiments turned into reusable components.
 
 More components coming soon.
+
+---
+
+## 📄 License
+
+This project is available under the [MIT License](LICENSE).
+
+Feel free to use, modify, and adapt the components for your own projects.
