@@ -108,7 +108,7 @@ Display native Obsidian image embeds inside chat bubbles.
 
 Display multiple native Obsidian image embeds as compact chat galleries.
 
-![[chat-image-gallery.png]]
+![Image Gallery](assets/screenshots/chat-image-gallery.png)
 
 
 **Includes**
@@ -125,7 +125,7 @@ Display multiple native Obsidian image embeds as compact chat galleries.
 
 Add emoji reactions and optional reaction counts beneath chat messages.
 
-![[chat-message-reactions.png]]
+![Message Reactions](assets/screenshots/chat-message-reactions.png)
 
 
 **Includes**
@@ -142,7 +142,7 @@ Add emoji reactions and optional reaction counts beneath chat messages.
 
 See the full modular chat system working together in one conversation.
 
-![[complete-chat-example.png]]
+![Complete Chat Example](assets/screenshots/complete-chat-example.png)
 
 
 Includes:
