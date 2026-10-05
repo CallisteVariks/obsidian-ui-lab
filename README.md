@@ -103,6 +103,21 @@ Display native Obsidian image embeds inside chat bubbles.
 [View component →](02%20-%20Chat%20UI/Image%20Messages.md)
 
 
+#### Image Gallery
+
+Display multiple native Obsidian image embeds as compact chat galleries.
+![[chat-image-gallery.png]]
+
+**Includes**
+
+- Two-column image grid
+- Left/right galleries
+- Consistent image cropping
+- Timestamps and read receipts
+
+[View component →](02%20-%20Chat%20UI/Image%20Gallery.md)
+
+
 ---
 
 ## 🚀 Quick Start
@@ -178,7 +193,8 @@ Current snippets:
 ├── reference-table.css
 ├── chat-core.css
 ├── chat-replies.css
-└── chat-images.css
+├── chat-images.css
+└── chat-gallery.css
 ```
 
 Dependencies and available classes are documented here:
@@ -196,7 +212,8 @@ obsidian-ui-lab/
 ├── .gitignore
 │
 ├── assets/
-│   └── screenshots/
+│   ├── screenshots/
+│   └── examples/
 │
 ├── 00 - Start Here/
 │   ├── How to Install.md
@@ -210,7 +227,8 @@ obsidian-ui-lab/
 ├── 02 - Chat UI/
 │   ├── Basic Chat Bubbles.md
 │   ├── Reply Messages.md
-│   └── Image Messages.md
+│   ├── Image Messages.md
+│   └── Image Gallery.md
 │
 └── .obsidian/
     └── snippets/
@@ -219,7 +237,8 @@ obsidian-ui-lab/
         ├── reference-table.css
         ├── chat-core.css
         ├── chat-replies.css
-        └── chat-images.css
+        ├── chat-images.css
+        └── chat-gallery.css
 ```
 
 ---
@@ -243,7 +262,6 @@ Take one component, take several, or use the entire vault.
 
 ### Chat UI
 
-- Image galleries
 - Message reactions
 - Complete chat examples
 

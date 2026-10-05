@@ -269,6 +269,36 @@ responsive image message
 
 
 ---
+
+### `chat-gallery.css`
+
+Creates compact image galleries inside chat-style callouts.
+
+**Purpose**
+
+- Displays multiple image embeds in a grid
+- Supports left and right gallery messages
+- Crops differently sized images consistently
+- Keeps timestamps below the image grid
+- Removes unwanted Obsidian scrollbars
+
+**Used by**
+
+- [[Image Gallery]]
+
+**Depends on**
+
+- `chat-core.css`
+
+**Callouts**
+
+```text
+chat-left-gallery
+chat-right-gallery
+```
+
+
+---
 ## Current Snippet Structure
 
 ```text
@@ -279,7 +309,8 @@ responsive image message
     ├── reference-table.css
     ├── chat-core.css
     ├── chat-replies.css
-    └── chat-images.css
+    ├── chat-images.css
+    └── chat-gallery.css
 ```
 
 More snippets will be added as new components are introduced.

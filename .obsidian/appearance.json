@@ -5,6 +5,7 @@
     "reference-table",
     "chat-core",
     "chat-replies",
-    "chat-images"
+    "chat-images",
+    "chat-gallery"
   ]
 }

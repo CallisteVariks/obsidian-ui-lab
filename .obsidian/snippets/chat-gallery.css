@@ -1,0 +1,227 @@
+/* ========================================
+   Obsidian UI Lab
+   Component: Chat Image Gallery
+
+   Requires:
+   - chat-core.css
+   ======================================== */
+
+
+/* ----------------------------------------
+   Shared gallery bubble
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"],
+.callout[data-callout="chat-right-gallery"] {
+  width: 360px !important;
+  max-width: 70% !important;
+
+  padding: 4px !important;
+
+  border: none !important;
+  border-radius: 18px;
+
+  overflow: hidden !important;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ----------------------------------------
+   Left gallery
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"] {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+
+  background: var(--background-secondary);
+
+  border-bottom-left-radius: 5px;
+}
+
+
+/* ----------------------------------------
+   Right gallery
+   ---------------------------------------- */
+
+.callout[data-callout="chat-right-gallery"] {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+
+  background: var(--ui-purple, #6d597a);
+  color: #ffffff;
+
+  border-bottom-right-radius: 5px;
+}
+
+
+/* ----------------------------------------
+   Hide default callout headers
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"]
+> .callout-title,
+.callout[data-callout="chat-right-gallery"]
+> .callout-title {
+  display: none;
+}
+
+
+/* ----------------------------------------
+   Gallery grid
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"]
+> .callout-content,
+.callout[data-callout="chat-right-gallery"]
+> .callout-content {
+  display: grid !important;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3px;
+
+  width: 100%;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  overflow: hidden !important;
+}
+
+
+/* ----------------------------------------
+   Individual image blocks
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"]
+> .callout-content > p:has(.image-embed),
+.callout[data-callout="chat-left-gallery"]
+> .callout-content > p:has(.internal-embed),
+.callout[data-callout="chat-right-gallery"]
+> .callout-content > p:has(.image-embed),
+.callout[data-callout="chat-right-gallery"]
+> .callout-content > p:has(.internal-embed) {
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden;
+}
+
+
+/* ----------------------------------------
+   Obsidian image wrappers
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"] .image-embed,
+.callout[data-callout="chat-left-gallery"] .internal-embed,
+.callout[data-callout="chat-right-gallery"] .image-embed,
+.callout[data-callout="chat-right-gallery"] .internal-embed {
+  display: block;
+
+  position: static;
+
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+}
+
+
+/* ----------------------------------------
+   Images
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"] img,
+.callout[data-callout="chat-right-gallery"] img {
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-radius: 7px;
+}
+
+
+/* ----------------------------------------
+   Timestamp row
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"]
+> .callout-content > p:has(.chat-time),
+.callout[data-callout="chat-right-gallery"]
+> .callout-content > p:has(.chat-time) {
+  grid-column: 1 / -1;
+
+  width: 100%;
+
+  margin: 0 !important;
+  padding: 3px 5px 1px !important;
+
+  box-sizing: border-box;
+}
+
+
+/* ----------------------------------------
+   Timestamp
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"] .chat-time,
+.callout[data-callout="chat-right-gallery"] .chat-time {
+  display: block;
+
+  width: 100%;
+
+  font-size: 0.65rem;
+  line-height: 1.1;
+
+  text-align: right;
+
+  opacity: 0.6;
+}
+
+.callout[data-callout="chat-right-gallery"] .chat-time {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ----------------------------------------
+   Scrollbar cleanup
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left-gallery"],
+.callout[data-callout="chat-right-gallery"],
+.callout[data-callout="chat-left-gallery"] .callout-content,
+.callout[data-callout="chat-right-gallery"] .callout-content,
+.callout[data-callout="chat-left-gallery"] .internal-embed,
+.callout[data-callout="chat-right-gallery"] .internal-embed,
+.callout[data-callout="chat-left-gallery"] .image-embed,
+.callout[data-callout="chat-right-gallery"] .image-embed {
+  overflow-x: hidden !important;
+  scrollbar-width: none;
+}
+
+.callout[data-callout="chat-left-gallery"] ::-webkit-scrollbar,
+.callout[data-callout="chat-right-gallery"] ::-webkit-scrollbar {
+  display: none;
+}
