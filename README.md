@@ -133,6 +133,22 @@ Add emoji reactions and optional reaction counts beneath chat messages.
 [View component →](02%20-%20Chat%20UI/Message%20Reactions.md)
 
 
+#### Complete Chat Example
+
+See the full modular chat system working together in one conversation.
+![[complete-chat-example.png]]
+
+Includes:
+
+- Text messages
+- Replies
+- Image messages
+- Image galleries
+- Reactions
+- Timestamps and read receipts
+
+[View complete example →](02%20-%20Chat%20UI/Complete%20Chat%20Example.md)
+
 ---
 
 ## 🚀 Quick Start
@@ -277,10 +293,6 @@ Take one component, take several, or use the entire vault.
 ---
 
 ## 🗺️ Coming Next
-
-### Chat UI
-
-- Complete chat examples
 
 ### More UI
 
