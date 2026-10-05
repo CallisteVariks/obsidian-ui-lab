@@ -1,0 +1,131 @@
+/* ========================================
+   Obsidian UI Lab
+   Component: Chat Reactions
+
+   Requires:
+   - chat-core.css
+   ======================================== */
+
+
+/* ----------------------------------------
+   Messages containing reactions
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"]:has(.chat-reactions),
+.callout[data-callout="chat-right"]:has(.chat-reactions),
+.callout[data-callout="chat-left-gallery"]:has(.chat-reactions),
+.callout[data-callout="chat-right-gallery"]:has(.chat-reactions) {
+  position: relative !important;
+  overflow: visible !important;
+
+  /* extra space below the bubble */
+  margin-bottom: 28px !important;
+
+  /* pushes timestamp/content slightly upward */
+  padding-bottom: 18px !important;
+}
+
+
+/* ----------------------------------------
+   Reaction row
+   ---------------------------------------- */
+
+.chat-reactions {
+  position: absolute;
+  bottom: -18px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+
+  width: max-content;
+  z-index: 10;
+}
+
+
+/* Left-side messages */
+
+.callout[data-callout="chat-left"] .chat-reactions,
+.callout[data-callout="chat-left-gallery"] .chat-reactions {
+  left: 10px;
+}
+
+
+/* Right-side messages */
+
+.callout[data-callout="chat-right"] .chat-reactions,
+.callout[data-callout="chat-right-gallery"] .chat-reactions {
+  right: 10px;
+}
+
+
+/* ----------------------------------------
+   Individual reaction
+   ---------------------------------------- */
+
+.chat-reaction {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 1;
+
+  background: var(--background-primary);
+
+  border: 2px solid var(--background-primary-alt);
+  border-radius: 999px;
+
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.16);
+
+  box-sizing: border-box;
+}
+
+
+/* ----------------------------------------
+   Reaction with count
+   ---------------------------------------- */
+
+.chat-reaction.reaction-count {
+  width: auto;
+  min-width: 31px;
+
+  padding: 0 7px;
+
+  gap: 4px;
+}
+
+.chat-reaction small {
+  font-size: 10px;
+  font-weight: 600;
+
+  color: var(--text-muted);
+}
+
+
+/* ----------------------------------------
+   Remove paragraph spacing
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"]
+> .callout-content > p:has(.chat-reactions),
+.callout[data-callout="chat-right"]
+> .callout-content > p:has(.chat-reactions),
+.callout[data-callout="chat-left-gallery"]
+> .callout-content > p:has(.chat-reactions),
+.callout[data-callout="chat-right-gallery"]
+> .callout-content > p:has(.chat-reactions) {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  height: 0;
+
+  grid-column: 1 / -1;
+}

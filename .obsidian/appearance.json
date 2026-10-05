@@ -6,6 +6,7 @@
     "chat-core",
     "chat-replies",
     "chat-images",
-    "chat-gallery"
+    "chat-gallery",
+    "chat-reactions"
   ]
 }

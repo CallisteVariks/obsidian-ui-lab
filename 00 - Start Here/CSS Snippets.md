@@ -297,6 +297,42 @@ chat-left-gallery
 chat-right-gallery
 ```
 
+---
+
+### `chat-reactions.css`
+
+Adds emoji reactions beneath chat messages.
+
+**Purpose**
+
+- Adds one or more emoji reactions
+- Supports optional reaction counts
+- Automatically aligns reactions with the message side
+- Works with text, replies, image messages, and galleries
+- Adds spacing only when reactions are present
+
+**Used by**
+
+- [[Message Reactions]]
+
+**Depends on**
+
+- `chat-core.css`
+
+**Optional integrations**
+
+- `chat-replies.css`
+- `chat-images.css`
+- `chat-gallery.css`
+
+**Main classes**
+
+```text
+.chat-reactions
+.chat-reaction
+.reaction-count
+```
+
 
 ---
 ## Current Snippet Structure
@@ -310,7 +346,8 @@ chat-right-gallery
     ├── chat-core.css
     ├── chat-replies.css
     ├── chat-images.css
-    └── chat-gallery.css
+    ├── chat-gallery.css
+    └── chat-reactions.css
 ```
 
 More snippets will be added as new components are introduced.

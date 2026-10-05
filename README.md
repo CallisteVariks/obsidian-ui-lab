@@ -118,6 +118,21 @@ Display multiple native Obsidian image embeds as compact chat galleries.
 [View component →](02%20-%20Chat%20UI/Image%20Gallery.md)
 
 
+#### Message Reactions
+
+Add emoji reactions and optional reaction counts beneath chat messages.
+![[chat-message-reactions.png]]
+
+**Includes**
+
+- Single or multiple reactions
+- Reaction counts
+- Automatic left/right positioning
+- Support for text, image, and gallery messages
+
+[View component →](02%20-%20Chat%20UI/Message%20Reactions.md)
+
+
 ---
 
 ## 🚀 Quick Start
@@ -194,7 +209,8 @@ Current snippets:
 ├── chat-core.css
 ├── chat-replies.css
 ├── chat-images.css
-└── chat-gallery.css
+├── chat-gallery.css
+└── chat-reactions.css
 ```
 
 Dependencies and available classes are documented here:
@@ -228,7 +244,8 @@ obsidian-ui-lab/
 │   ├── Basic Chat Bubbles.md
 │   ├── Reply Messages.md
 │   ├── Image Messages.md
-│   └── Image Gallery.md
+│   ├── Image Gallery.md
+│   └── Message Reactions.md
 │
 └── .obsidian/
     └── snippets/
@@ -238,7 +255,8 @@ obsidian-ui-lab/
         ├── chat-core.css
         ├── chat-replies.css
         ├── chat-images.css
-        └── chat-gallery.css
+		├── chat-gallery.css
+		└── chat-reactions.css
 ```
 
 ---
@@ -262,7 +280,6 @@ Take one component, take several, or use the entire vault.
 
 ### Chat UI
 
-- Message reactions
 - Complete chat examples
 
 ### More UI
