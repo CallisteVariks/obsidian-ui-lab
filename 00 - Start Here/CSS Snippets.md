@@ -166,13 +166,6 @@ This is the foundation for the current [[Basic Chat Bubbles]] component and futu
 
 - [[Basic Chat Bubbles]]
 
-Future components may include:
-
-- Reply Messages
-- Image Messages
-- Image Gallery
-- Message Reactions
-
 **Depends on**
 
 - No required shared snippets
@@ -243,6 +236,39 @@ Adds quoted reply previews inside chat bubbles.
 
 ---
 
+### `chat-images.css`
+
+Adds native Obsidian image embeds to chat bubbles.
+
+**Purpose**
+
+- Styles image messages
+- Removes default embed spacing
+- Adds rounded image corners
+- Supports image timestamps
+- Prevents unwanted scrollbars
+- Keeps images responsive
+
+**Used by**
+
+- [[Image Messages]]
+
+**Depends on**
+
+- `chat-core.css`
+
+**Main behavior**
+
+```text
+Native ![[image]] embed
+        ↓
+chat-left / chat-right
+        ↓
+responsive image message
+```
+
+
+---
 ## Current Snippet Structure
 
 ```text
@@ -251,8 +277,9 @@ Adds quoted reply previews inside chat bubbles.
     ├── custom-colors.css
     ├── color-swatch-cards.css
     ├── reference-table.css
-    └── chat-core.css
-    └── chat-replies.css
+    ├── chat-core.css
+    ├── chat-replies.css
+    └── chat-images.css
 ```
 
 More snippets will be added as new components are introduced.

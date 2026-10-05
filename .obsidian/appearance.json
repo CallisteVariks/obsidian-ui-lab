@@ -4,6 +4,7 @@
     "custom-colors",
     "reference-table",
     "chat-core",
-    "chat-replies"
+    "chat-replies",
+    "chat-images"
   ]
 }

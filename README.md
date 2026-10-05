@@ -86,6 +86,22 @@ Add compact quoted-message previews inside chat bubbles.
 
 [View component →](02%20-%20Chat%20UI/Reply%20Messages.md)
 
+#### Image Messages
+
+Display native Obsidian image embeds inside chat bubbles.
+
+![Image Messages](assets/screenshots/chat-image-messages.png)
+
+**Includes**
+
+- Left/right image messages
+- Responsive images
+- Rounded corners
+- Optional captions
+- Timestamps and read receipts
+
+[View component →](02%20-%20Chat%20UI/Image%20Messages.md)
+
 
 ---
 
@@ -160,7 +176,9 @@ Current snippets:
 ├── custom-colors.css
 ├── color-swatch-cards.css
 ├── reference-table.css
-└── chat-core.css
+├── chat-core.css
+├── chat-replies.css
+└── chat-images.css
 ```
 
 Dependencies and available classes are documented here:
@@ -190,14 +208,18 @@ obsidian-ui-lab/
 │   └── Color Reference Table.md
 │
 ├── 02 - Chat UI/
-│   └── Basic Chat Bubbles.md
+│   ├── Basic Chat Bubbles.md
+│   ├── Reply Messages.md
+│   └── Image Messages.md
 │
 └── .obsidian/
     └── snippets/
         ├── custom-colors.css
         ├── color-swatch-cards.css
         ├── reference-table.css
-        └── chat-core.css
+        ├── chat-core.css
+        ├── chat-replies.css
+        └── chat-images.css
 ```
 
 ---
@@ -221,8 +243,6 @@ Take one component, take several, or use the entire vault.
 
 ### Chat UI
 
-- Reply messages
-- Image messages
 - Image galleries
 - Message reactions
 - Complete chat examples

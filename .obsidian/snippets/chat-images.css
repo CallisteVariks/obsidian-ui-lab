@@ -1,0 +1,115 @@
+/* ========================================
+   Obsidian UI Lab
+   Component: Chat Images
+
+   Requires:
+   - chat-core.css
+   ======================================== */
+
+
+/* ----------------------------------------
+   Image message bubble
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"]:has(.image-embed),
+.callout[data-callout="chat-right"]:has(.image-embed),
+.callout[data-callout="chat-left"]:has(.internal-embed img),
+.callout[data-callout="chat-right"]:has(.internal-embed img) {
+  padding: 5px;
+
+  max-width: 65% !important;
+
+  overflow: hidden !important;
+}
+
+
+/* ----------------------------------------
+   Obsidian image wrappers
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"] .image-embed,
+.callout[data-callout="chat-right"] .image-embed,
+.callout[data-callout="chat-left"] .internal-embed,
+.callout[data-callout="chat-right"] .internal-embed {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden;
+}
+
+
+/* ----------------------------------------
+   Image
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"] img,
+.callout[data-callout="chat-right"] img {
+  display: block;
+
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+
+  margin: 0 !important;
+
+  border-radius: 14px;
+}
+
+
+/* ----------------------------------------
+   Remove Obsidian wrapper spacing
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"]
+> .callout-content > p:has(.image-embed),
+.callout[data-callout="chat-right"]
+> .callout-content > p:has(.image-embed),
+.callout[data-callout="chat-left"]
+> .callout-content > p:has(.internal-embed),
+.callout[data-callout="chat-right"]
+> .callout-content > p:has(.internal-embed) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* ----------------------------------------
+   Timestamp under image
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"]:has(img) .chat-time,
+.callout[data-callout="chat-right"]:has(img) .chat-time {
+  margin-top: 4px;
+  padding: 0 5px 2px;
+
+  font-size: 0.65rem;
+  text-align: right;
+}
+
+
+/* ----------------------------------------
+   Scrollbar cleanup
+   ---------------------------------------- */
+
+.callout[data-callout="chat-left"]:has(img)
+> .callout-content,
+.callout[data-callout="chat-right"]:has(img)
+> .callout-content {
+  max-width: 100%;
+
+  overflow: hidden !important;
+
+  scrollbar-width: none;
+}
+
+.callout[data-callout="chat-left"]:has(img)
+> .callout-content::-webkit-scrollbar,
+.callout[data-callout="chat-right"]:has(img)
+> .callout-content::-webkit-scrollbar {
+  display: none;
+}
