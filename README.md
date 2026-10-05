@@ -77,6 +77,7 @@ The chat system will grow modularly with replies, images, galleries, and reactio
 
 Add compact quoted-message previews inside chat bubbles.
 ![Reply Messages](assets/screenshots/chat-replies.png)
+
 **Includes**
 
 - Original message preview
@@ -106,7 +107,9 @@ Display native Obsidian image embeds inside chat bubbles.
 #### Image Gallery
 
 Display multiple native Obsidian image embeds as compact chat galleries.
+
 ![[chat-image-gallery.png]]
+
 
 **Includes**
 
@@ -121,7 +124,9 @@ Display multiple native Obsidian image embeds as compact chat galleries.
 #### Message Reactions
 
 Add emoji reactions and optional reaction counts beneath chat messages.
+
 ![[chat-message-reactions.png]]
+
 
 **Includes**
 
@@ -136,7 +141,9 @@ Add emoji reactions and optional reaction counts beneath chat messages.
 #### Complete Chat Example
 
 See the full modular chat system working together in one conversation.
+
 ![[complete-chat-example.png]]
+
 
 Includes:
 
@@ -148,6 +155,7 @@ Includes:
 - Timestamps and read receipts
 
 [View complete example →](02%20-%20Chat%20UI/Complete%20Chat%20Example.md)
+
 
 ---
 
@@ -271,8 +279,8 @@ obsidian-ui-lab/
         ├── chat-core.css
         ├── chat-replies.css
         ├── chat-images.css
-		├── chat-gallery.css
-		└── chat-reactions.css
+        ├── chat-gallery.css
+        └── chat-reactions.css
 ```
 
 ---
