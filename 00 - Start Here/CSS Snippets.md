@@ -212,6 +212,37 @@ and:
 
 ---
 
+### `chat-replies.css`
+
+Adds quoted reply previews inside chat bubbles.
+
+**Purpose**
+
+- Displays the original quoted message
+- Shows the person being replied to
+- Truncates long quoted messages
+- Styles replies differently inside left and right bubbles
+- Adds spacing between the quoted message and new response
+
+**Used by**
+
+- [[Reply Messages]]
+
+**Depends on**
+
+- `chat-core.css`
+
+**Main classes**
+
+```text
+.chat-reply
+.chat-reply-name
+.chat-reply-text
+.chat-message
+```
+
+---
+
 ## Current Snippet Structure
 
 ```text
@@ -221,6 +252,7 @@ and:
     ├── color-swatch-cards.css
     ├── reference-table.css
     └── chat-core.css
+    └── chat-replies.css
 ```
 
 More snippets will be added as new components are introduced.

@@ -35,18 +35,21 @@
    Remove default Obsidian callout styling
    ---------------------------------------- */
 
-.callout[data-callout="chat-left"] .callout-title,
-.callout[data-callout="chat-right"] .callout-title {
+/* Hide only the OUTER chat callout title */
+.callout[data-callout="chat-left"] > .callout-title,
+.callout[data-callout="chat-right"] > .callout-title {
   display: none;
 }
 
-.callout[data-callout="chat-left"] .callout-content,
-.callout[data-callout="chat-right"] .callout-content {
+/* Reset only the OUTER chat content */
+.callout[data-callout="chat-left"] > .callout-content,
+.callout[data-callout="chat-right"] > .callout-content {
   padding: 0;
 }
 
-.callout[data-callout="chat-left"] p,
-.callout[data-callout="chat-right"] p {
+/* Remove margins only from direct message paragraphs */
+.callout[data-callout="chat-left"] > .callout-content > p,
+.callout[data-callout="chat-right"] > .callout-content > p {
   margin: 0;
 }
 

@@ -3,6 +3,7 @@
     "color-swatch-cards",
     "custom-colors",
     "reference-table",
-    "chat-core"
+    "chat-core",
+    "chat-replies"
   ]
 }

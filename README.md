@@ -52,7 +52,7 @@ The underlying table component is intentionally generic and can also be adapted 
 
 ---
 
-### 💬 Basic Chat Bubbles
+### 💬 Chat UI
 
 A simple chat-style conversation using native Obsidian callouts.
 
@@ -72,6 +72,20 @@ A simple chat-style conversation using native Obsidian callouts.
 [View component →](02%20-%20Chat%20UI/Basic%20Chat%20Bubbles.md)
 
 The chat system will grow modularly with replies, images, galleries, and reactions.
+
+#### Reply Messages
+
+Add compact quoted-message previews inside chat bubbles.
+![Reply Messages](assets/screenshots/chat-replies.png)
+**Includes**
+
+- Original message preview
+- Reply author
+- Automatic truncation
+- Left/right styling
+
+[View component →](02%20-%20Chat%20UI/Reply%20Messages.md)
+
 
 ---
 
